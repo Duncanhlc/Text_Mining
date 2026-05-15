@@ -26,7 +26,7 @@ for topic_id, group in df.groupby('Topic'):
 print(f"Total topics loaded: {len(topic)}")
 
 # Call gemini
-client = genai.Client(api_key="AIzaSyAqrBdaL3-GBKBgtpS2-yd-hdRV5YrO-3I")
+client = genai.Client(api_key="")
 
 response = client.models.generate_content(
     model="gemini-2.5-flash",
